@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Enhanced formatting for AI responses */
+.formatted-response {
+  @apply space-y-4;
+}
+
+.formatted-response ul {
+  @apply list-disc list-inside space-y-2 ml-4;
+}
+
+.formatted-response li {
+  @apply leading-relaxed;
+}
+
+.formatted-response strong {
+  @apply font-semibold;
+}
+
+.formatted-response p {
+  @apply leading-relaxed;
+}
+
+/* Dark theme specific styles */
+.dark .formatted-response strong {
+  @apply text-white;
+}
+
+.dark .formatted-response li {
+  @apply text-gray-300;
+}
